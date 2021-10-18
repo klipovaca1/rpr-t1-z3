@@ -43,7 +43,6 @@ public class Sat {
         else
             for (int i = 0; i > pomak; i = i - 1)
                 prethodni ();
-
     }
     public int dajSate () {
         return sati;
@@ -55,7 +54,7 @@ public class Sat {
         return sekunde;
     }
     public void Ispisi () {
-        System.out.println (sati + ":" + minute + ":" + sekunde);
+        System.out.println (dajSate () + ":" + dajMinute () + ":" + dajSekunde ());
     }
     public static void main (String[] args) {
         Sat sat = new Sat (15, 30, 45);
